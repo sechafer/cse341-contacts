@@ -12,3 +12,43 @@ GET https://cse341-contacts-gm00.onrender.com/contacts
 
 ### GET specific contact
 GET https://cse341-contacts-gm00.onrender.com/contacts/6670a2f8f0b37ceca5fcef0d
+
+
+// LOCAL ### GET home GET http://localhost:3000
+
+### GET all contacts GET http://localhost:3000/contacts
+
+### GET specific contact GET http://localhost:3000/contacts/6670a2f8f0b37ceca5fcef0d
+
+### Add contact (POST) POST http://localhost:3000/contacts Content-Type: application/json
+
+{
+    "_id":"6670a2f8f0b37ceca5fcef0d","firstName":"Lynne","lastName":"Hathaway","email":"lj@hathaway.net","favoriteColor":"Purple","birthday":"6/6/1966"
+}
+
+### Update contact (PUT) PUT http://localhost:3000/contacts/6670a374f0b37ceca5fcef0f Content-Type: application/json 
+ {
+    "_id":"6670a374f0b37ceca5fcef0f","firstName":"Alisha","lastName":"Hathaway","email":"aj@hathaway.net","favoriteColor":"Green","birthday":"6/6/1996"
+    }
+
+### Delete Contact DELETE http://localhost:3000/contacts/6670a41bf0b37ceca5fcef12
+
+// PRODUCTION ### GET home GET https://cse341bh-contacts.onrender.com
+
+### GET all contacts GET https://cse341-contacts-gm00.onrender.com/contacts
+
+### GET specific contact GET https://cse341-contacts-gm00.onrender.com/contacts/6670a2f8f0b37ceca5fcef0d
+
+### Add contact (POST contact) POST https://cse341-contacts-gm00.onrender.com/contacts Content-Type: application/json
+
+{
+"firstName": "Kyrra", "lastName": "Hathaway", "email": "kl@hathaway.net", "favoriteColor": "Green", "birthday": "4/4/1999"
+}
+
+### Change contact information (PUT) PUT https://cse341-contacts-gm00.onrender.com/contacts/6670a374f0b37ceca5fcef0f Content-Type: application/json
+
+{
+"firstName": "Kyrralynne", "lastName": "Hathaway", "email": "kl@hathaway.net", "favoriteColor": "Green", "birthday": "4/4/1994"
+}
+
+### Remove a contact (DELETE) DELETE https://cse341-contacts-gm00.onrender.com/contacts/6670a41bf0b37ceca5fcef12
